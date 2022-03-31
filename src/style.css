@@ -1,0 +1,53 @@
+.botao{
+    background:blue;
+    width: 176px;
+
+}
+.barra{
+    background:blue;
+    color: white;
+    height:100px;
+}
+.logo{
+  
+}
+.perfil{
+    height: 40px;
+    width:40px;
+    border-radius: 100px;
+}
+.abc{
+}
+.texto{
+    height: 120px;
+    background:green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BarraDeBaixo{
+    background:red;
+    height:100px;
+    width: 1280px;
+   
+    position: fixed;
+    display:flex;
+    bottom: 0px;
+    left:0px 
+}
+.semanas{
+    width:20px;
+    height:20px;
+    background: green;
+    border-radius: 2.5px;
+}
+.semanas2{
+    width:20px;
+    height:20px;
+    background: blue;
+    border-radius: 2.5px;
+}
+.caixa{
+    display: flex;
+   
+}
