@@ -1,32 +1,77 @@
+body{
+    background: rgb(242, 242, 242);
+}
+.corpo{
+    background: rgb(242, 242, 242);
+}
+.tela0{
+    margin-left: 100px;
+}
+.tela01{
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.tela02{
+    margin-left: 88px;
+}
+.tela03{
+    margin-left: 50px;
+}
+.botao0{
+    margin-bottom: 10px;
+    height: 50px;
+    width:300px;
+    border:1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+}
 .botao{
-    background:blue;
-    width: 176px;
-
+    background:rgb(82, 182, 255);
+    height: 50px;
+    width:300px;
+    color:white;
+    border-radius: 5px;
+    font-size: 30px;
 }
 .barra{
-    background:blue;
+    background:rgb(18, 107, 165);
     color: white;
-    height:100px;
+    height:70px;
 }
 .logo{
+    margin-left: 10px;
+    margin-top:10px;
   
 }
 .perfil{
+    margin-left: 200px;
+    margin-top:10px;
     height: 40px;
     width:40px;
     border-radius: 100px;
 }
-.abc{
+.abcc{
+    height:120px;
+    width:120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background:rgb(82, 182, 255);
+    position: fixed;
+    display:flex;
+    bottom: 20px;
+    left: 150px ;
+    color:white;
 }
 .texto{
     height: 120px;
-    background:green;
+    background:rgb(242, 242, 242);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .BarraDeBaixo{
-    background:red;
+    background:rgb(255, 255, 255);
     height:100px;
     width: 1280px;
    
@@ -35,19 +80,177 @@
     bottom: 0px;
     left:0px 
 }
+.Historico{
+    margin-left: 250px;
+    color:rgb(82, 182, 255);
+}
+.habito{
+    margin-left: 20px;
+    color:rgb(82, 182, 255);
+}
 .semanas{
-    width:20px;
-    height:20px;
-    background: green;
+    width:35px;
+    height:35px;
+    
+    background: white;
+    
+    border:2px solid rgb(207, 207, 207);
     border-radius: 2.5px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid rgb(207, 207, 207);
+    color: rgb(207, 207, 207);;
 }
 .semanas2{
-    width:20px;
-    height:20px;
-    background: blue;
+    width:38px;
+    height:38px;
+    color: white;
+    
     border-radius: 2.5px;
+    margin-left: 10px;
+    background: rgb(207, 207, 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.b{
+    margin-top: 50px;
+}
+.caixafim{
+    display: flex;
+    
 }
 .caixa{
     display: flex;
+    position: relative;
+
+}
+.caixa2{
    
+    display: flex;
+    background: white;
+    height:50px;
+    width:380px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.fechar{
+    display:none;
+    width:20px;
+    height:20px;
+    margin-bottom: 100px;
+}
+.aberto{
+    background: white;
+}
+.input{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 300px;
+}
+.salvar{
+    background: rgb(82, 182, 255);
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+
+}
+.cancelar{
+    background: white;
+    color:rgb(82, 182, 255);
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mais{
+    height: 40px;
+    width:40px;
+    background:rgb(82, 182, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    color: white;
+    border-radius: 5px;
+    font-size: 35px;
+}
+.textoh1{
+    margin-right: 80px;
+    color: rgb(18, 107, 165);
+}
+.confirmar{
+    height: 50px;
+    width:50px;
+    background:rgb(143, 197, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 0px;
+
+}
+.confirmar2{
+    height: 50px;
+    width:50px;
+    background:rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+}
+.fim{
+    background: white;
+    margin-bottom: 10px;
+    
+    margin-left: 10px;
+    height:100px;
+    display: flex;
+    align-items: center;
+}
+.textfim{
+    margin-left: 10px;
+    display: flex;
+    width: 300px;
+}
+.cor{
+    background: white;
+    margin-left: 10px;
+    
+}
+.cor2{
+    background: white;
+    position: absolute;
+	right: 50px;
+	bottom: 0px;
+}
+.QQ{
+    margin-bottom: 20px;
+}
+.verde{
+    color: rgb(143, 197, 73);
+    margin-left: 3px;
+}
+.AA{
+    margin-left: 3px;
 }
