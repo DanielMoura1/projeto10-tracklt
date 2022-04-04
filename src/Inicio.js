@@ -8,6 +8,7 @@ export default  function Inicio(props){
         const [chave,setChave] = useState(1)
 
     function logar(){
+    }
         const requisicao = axios.post('https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/auth/login',{
             email: email,
             password: senha
@@ -18,8 +19,10 @@ export default  function Inicio(props){
             setToken(resposta.data.token)
             setChave(2)
         });
-
-    }
+        requisicao.catch(tratarErro =>{
+            setChave(1)
+        });
+    
     
     return(<>
         <img className="tela01" src="Group 8.png" />
@@ -28,7 +31,7 @@ export default  function Inicio(props){
 		 <div className="tela03"> <input className="botao0" placeholder='email' type="email"  onChange={(a) => setEmail(a.target.value)} value={email} /></div>
          
 		    <div className="tela03"><input className="botao0" placeholder='senha' type="password" onChange={(s) => setSenha(s.target.value)} value={senha} /></div>
-          <Link to={`${email!==""&& senha !=='' ?'/Nivel4' :''}`}>
+          <Link to={`${chave == 2 ?'/Nivel4' :''}`}>
 		    <div className="tela03"><button className="botao" type="submit" onClick={logar}>Entrar</button></div>
           </Link>
         

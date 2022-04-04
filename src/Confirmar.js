@@ -56,8 +56,8 @@ export default function  Confirmar(props){
         <div className="fim">
             <div className="caixa">
                 <div>
-                    <div className="textfim">{name} </div>
-                   <div className="textfim"> <p>Sequência atual : </p> <p className="verde"> { currentSequence} dias</p></div>
+                    <div className="textfim2">{name} </div>
+                   <div className="textfim"> <p >Sequência atual : </p> <p className="verde"> { currentSequence} dias</p></div>
                     <div className="textfim"> <p>Seu recorde :</p> <p className={`${currentSequence === highestSequence ?'verde' :'AA'}`}> { highestSequence} dias</p></div>
                 </div>
                 <div onClick={() => mudar(id,done)} className={`${done ==true? 'confirmar' :'confirmar2' }`}> <img src="Vector.png"/> </div>

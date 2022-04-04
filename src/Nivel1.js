@@ -7,6 +7,7 @@ export default  function Nivel1(){
     const [nome,setNome] =useState('');
     const [email,setEmail] =useState('');
     const [foto,setFoto] =useState('');
+    const [chave,setChave] = useState(1)
     function GO(){
         const requisicao = axios.post('https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/auth/sign-up',{
             email: email,
@@ -15,13 +16,18 @@ export default  function Nivel1(){
             password: senha
         })
         requisicao.then(resposta => {
+            alert('cadastrado com sucesso')
             console.log('oioi')
+            setChave(2)
+        });
+        requisicao.catch(tratarErro =>{
+            setChave(1)
         });
     }
     return(
         <>
          <img className="tela01"  src="Group 8.png" />
-       
+         <form>
         
 		 <div className="tela03"> <input  className="botao0" placeholder='email' type="email"   onChange={(a) => setEmail(a.target.value)} value={email}/></div>
          
@@ -32,7 +38,7 @@ export default  function Nivel1(){
           <div className="tela03"><input  className="botao0" placeholder='foto' type="url" onChange={(f) => setFoto(f.target.value)} value={foto}/></div>
          
 		  <Link to={`${email!==""&& senha !=='' && nome !== ''&& foto !=='' ?'/' :''}`}><div className="tela03"><button className="botao" type="submit" onClick={GO}>Entrar</button></div></Link>
-        
+          </form>
           
             <Link to='/'><p className="tela02">Já tem uma conta? Faça login! </p></Link>
          

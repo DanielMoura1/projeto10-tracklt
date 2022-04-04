@@ -233,6 +233,12 @@ body{
     display: flex;
     width: 300px;
 }
+.textfim2{
+    margin-left: 10px;
+    display: flex;
+    width: 300px;
+    font-size: 23px;
+}
 .cor{
     background: white;
     margin-left: 10px;
